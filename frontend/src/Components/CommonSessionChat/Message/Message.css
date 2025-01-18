@@ -1,0 +1,48 @@
+.message .img {
+    margin-top: auto;
+    width: 35px;
+    height: 35px;
+}
+
+.reply-view span, .message-sender {
+    font-size: .8em;
+}
+
+.reply-view .view-button, .reply-view .reply-button {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.reply-view .view-button:hover , .reply-view .reply-button:hover {
+    transform: scale(1.09);
+}
+.sender-message {
+    cursor: pointer;
+}
+.delete-msg {
+    display: none;
+}
+
+.sender-message:hover .delete-msg {
+    display: flex;
+    align-items: center;
+}
+.message-content {
+    word-break: break-all;
+    white-space: normal;
+}
+.message-content.light{
+    background-color: #F0EDF2;
+}
+
+.message-content.dark{
+    background-color: #733c6b;
+    color: white !important;
+}
+
+.reply.active path, .view-replies.active path {
+    color: #717171;
+}
+.under-msg{
+    margin-left: 45px;
+}

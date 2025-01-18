@@ -1,0 +1,31 @@
+.profile-student-page {
+    height: 100%;
+}
+.profile-student {
+    background-color: #FEF7EF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    border-radius: 1.5em;
+}
+.profile-student h1 {
+    font-size: 35px;
+}
+
+.profile-student-page .absence {
+    /*height: fit-content;*/
+}
+.profile-student-page .profile {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.profile-student-page .more-margin {
+    margin-top: 40px;
+}
+.absence {
+    min-height: 100% ;
+    background-color: #F0EDF2;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15);
+}
+.absence .my-courses {
+    background-color: #fdfdfd;
+}

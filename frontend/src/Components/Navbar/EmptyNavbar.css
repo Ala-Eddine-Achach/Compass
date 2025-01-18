@@ -1,0 +1,142 @@
+.sideNavbar {
+  background-color: #d1c4d8 !important;
+  padding: 0.7rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  /*position: relative;*/
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 22rem;
+  /*height: 95vh;*/
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  align-self: start;
+}
+
+.BellbuttonNav,
+.LogoutbuttonNav {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bellNav,
+.logouttNav {
+  width: 22px;
+}
+
+.bellNav path,
+.logouttNav path {
+  fill: #262626;
+}
+
+.BellbuttonNav:hover .bellNav {
+    animation: bellRing 1s both infinite alternate;
+}
+
+.LogoutbuttonNav:hover .logouttNav {
+    animation: shake 1s ease infinite alternate;
+}
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+  0% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+
+  15% {
+    transform: rotateZ(15deg);
+  }
+
+  30% {
+    transform: rotateZ(-15deg);
+  }
+
+  45% {
+    transform: rotateZ(10deg);
+  }
+
+  60% {
+    transform: rotateZ(-10deg);
+  }
+
+  75% {
+    transform: rotateZ(2deg);
+  }
+}
+
+/* logout button shake animation keyframes*/
+@keyframes shake {
+  0% {
+    transform: translateX(-2px); /* Move left */
+  }
+  50% {
+    transform: translateX(2px); /* Move right */
+  }
+  100% {
+    transform: translateX(0); /* Back to the original position */
+  }
+}
+
+.BellbuttonNav:active,
+.LogoutbuttonNav:active {
+  transform: scale(0.8);
+}
+
+@media (max-width: 1200px) {
+  .sideNavbar {
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .sideNavbar {
+    width: 17rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .sideNavbar {
+    width: 15rem !important;
+  }
+}
+
+/*baad ta nchoufou kifech nhotou e chay taht baadhou ll chat mtee session*/
+/* @media (max-width: 600px) {
+  .sideNavbar {
+    width: 8.5rem;
+    height: max-content;
+  }
+} */
+
+
+.notification-dot {
+  width: 17px;
+  height: 17px;
+  background-color: #e73737;
+  border-radius: 50%;
+  position: absolute;
+  top: 32%;
+  right: 25%;
+  transform: translate(50%, -50%);
+  /*display: none;*/
+  color: white;
+  font-size: 0.8rem;
+}

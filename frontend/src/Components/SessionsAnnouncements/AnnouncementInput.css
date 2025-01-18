@@ -1,0 +1,41 @@
+.announcement-form {
+    margin-left: 17px;
+    width: 94%;
+    /*max-width: 628px;*/
+    background-color: #FDFDFD;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    height: 55px;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.send-input-announcement textarea::placeholder {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.send-icon-button {
+    transition: transform 0.2s;
+
+}
+
+.send-icon-button:hover {
+    transform: scale(1.1);
+}
+
+
+.send-input-announcement textarea {
+    width: 98%;
+    resize: none;
+    border: 0;
+    padding-left: 12px;
+    outline: none;
+    line-height: 1.1;
+    height: 40px;
+    max-height: 80px;
+}
+

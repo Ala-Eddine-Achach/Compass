@@ -1,0 +1,80 @@
+.number-input input, .course-input input {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 12px;
+    width: 100%;
+    height: 45px;
+}
+
+.number-input input::placeholder, .course-input input::placeholder {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.Recommend-title {
+    background-color: #FEF7EF;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.13);
+    width: 98%;
+}
+
+.Recommend-title h1 {
+    font-size: 2.5rem;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.Recommend-title h1.medium-h1 {
+    font-size: 3.5vw;
+}
+
+
+.send {
+    font-size: 35px;
+    color: #262626;
+    transition: transform 0.3s ease;
+}
+.courses {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.course {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 12px;
+    /*width: 100%;*/
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.14);
+    background-color: #F0EDF2;
+    transition: transform 0.2s ease;
+}
+
+.course:hover {
+    background-color: #E3E0E7;
+    transform: scale(1.004);
+}
+.course a {
+    text-decoration: none;
+}
+
+.star-icon svg path{
+    color: #692E5F !important;
+}
+
+.payment-status {
+    margin-top: -6px;
+}
+
+.sendIconButton {
+    transition: transform 0.2s;
+}
+
+.sendIconButton:hover {
+    transform: scale(1.1);
+}
+
+.recommend-form button {
+    background: transparent;
+    border: none;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "content": "Task of the chapter one 1 and fuve ket's fo fam",
+    "isChecked": false
+  },
+  {
+    "id": 2,
+    "content": "Task 2",
+    "isChecked": true
+  },
+  {
+    "id": 3,
+    "content": "Task 3",
+    "isChecked": false
+  },
+  {
+    "id": 4,
+    "content": "Task 4",
+    "isChecked": false
+  },
+  {
+    "id": 5,
+    "content": "Task 5",
+    "isChecked": false
+  },
+  {
+    "id": 6,
+    "content": "Task 6",
+    "isChecked": false
+  }
+]

@@ -1,0 +1,39 @@
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.space-x-2 {
+    margin-right: 8px; /* Adjust as needed */
+    width: 100%;
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+.div1, .div2 {
+    background-color: #D1C4D8; /* Adjust as needed */
+    height: 10px;
+}
+.div1 {
+    width: 100%;
+}
+.div2 {
+    width: 80%;
+}
+
+
+.space-y-2 {
+    width: 100%;
+}
+.space-y-2 > div {
+    margin-top: 8px; /* Adjust as needed */
+}

@@ -1,0 +1,108 @@
+.course.card, .course.card-teacher {
+    /*width: 260px;*/
+    padding-top: 20px;
+    width: 95%;
+    position: relative;
+    border-radius: 2.8em;
+    border: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 120px;
+}
+.course.card-teacher {
+    height: 100px;
+}
+
+.card-title, .card-title-teacher {
+    padding-bottom: 0.5px;
+    font-size: 22px;
+}
+
+
+.course.card .card-content, .course.card-teacher .card-content {
+    transition: transform 0.3s ease;
+}
+.course.card .card-title, .course.card .prof {
+    padding-bottom: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+.course.card .prof {
+    font-size: 15px;
+    width: 100%;
+}
+.card-title-teacher {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.course.card .card-bottom .img.img-for-absence{
+    margin-top: -4px;
+}
+.course.card .card-bottom .img.img-for-course {
+    margin-top: -20px;
+}
+.course.card:hover, .course.card-teacher:hover{
+    transform: scale(0.98);
+}
+
+.course.card:hover .card-content, .course.card-teacher:hover .card-content {
+    transform: scale(0.97);
+}
+
+.course.card:active {
+    transform: scale(0.93);
+}
+.see-more {
+    position: relative;
+}
+.dropdown-course-content {
+    position: absolute;
+    z-index: 1;
+    background: #FFFEFC;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+    margin-left: -110px;
+    margin-top: -31px;
+    border-radius: 15px;
+}
+
+.dropdown-course-content .dropdown-course-item {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+    padding: 16px 10px;
+}
+
+.dropdown-course-content .dropdown-course-item:hover {
+    color: white;
+    background-color: #733c6b;
+    border-radius: 0 0 15px 15px;
+    font-weight: bold;
+}
+.dropdown-course-content .dropdown-course-item:first-child {
+    border-radius: 15px 15px 0 0;
+}
+.see-more .ReactModal__Content {
+    padding-top: 0!important;
+}
+
+.student-item {
+    background-color: #F0EDF2;
+    border-radius: 15px;
+    box-shadow:  3px 3px 9px rgba(0, 0, 0, 0.16);
+    width: 90%;
+    padding: 7px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,137 @@
+.task {
+  padding: 10px;
+  padding-right: 13px;
+  display: grid;
+  grid-template-rows: 0.4fr 1.6fr;
+  /* max-width: 370px; */
+  /*margin: 10px;*/
+  width: 100%;
+  max-width: 355px;
+  border-radius: 40px;
+  background-color: rgba(233, 177, 176, 0.36);
+  height: 250px;
+}
+
+.tasks-title {
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 22px;
+  padding-right: 10px;
+  font-weight: 600;
+  height: 50px;
+}
+
+.emptyTasks {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyTasks svg {
+  fill: #afafaf;
+}
+
+.emptyTasks div {
+  margin-top: 5px;
+  color: #a8a8a8;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.row.d-flex.justify-content {
+  /* width: 90%; */
+  margin: 0;
+  padding: 0 5px;
+}
+
+.custom {
+  /* width: 100%; */
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Content {
+  /*!*font-size: large;*!*/
+  /*padding-left: 8px;*/
+  width: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.containerCheck {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.containerCheck input {
+  display: none;
+}
+
+.containerCheck svg {
+  overflow: visible;
+}
+
+.pathCheck {
+  fill: rgb(245, 245, 245);
+  stroke: #262626;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.pathCheckNew {
+  fill: rgb(245, 245, 245);
+  stroke: #a8a8a8;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.containerCheck input:checked ~ svg .pathCheck {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+.inputNewTask {
+  background-color: transparent;
+  /*padding-left: 5px;*/
+  width: 100%;
+}
+
+.inputNewTask:focus {
+  outline: none;
+}
+
+.crossed {
+  text-decoration: line-through;
+  /* color: grey; */
+}
+
+.custom .deleteTask {
+  display: none;
+  /* cursor: pointer; */
+  padding: 0 5px;
+  width: 15%;
+  height: 24px;
+}
+.custom:hover .deleteTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

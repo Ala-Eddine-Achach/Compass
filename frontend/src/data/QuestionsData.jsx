@@ -1,0 +1,58 @@
+export const Questions = [
+    {
+      Id: 1,
+      Session_ID: 1,
+      Content: "What is the method of Gauss?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "John Doe",
+    },
+    {
+      Id: 2,
+      Session_ID: 1,
+      Content: "What is the method of Jacobi?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "Jane Doe",
+    },
+    {
+      Id: 3,
+      Session_ID: 2,
+      Content: "What are controllers?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "alex",
+    },
+    {
+      Id: 4,
+      Session_ID: 2,
+      Content: "What are services?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "salem",
+    },
+    {
+      Id: 5,
+      Session_ID: 3,
+      Content: "What are hooks?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "mohamed",
+    },
+    {
+      Id: 6,
+      Session_ID: 3,
+      Content: "What is context?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "monji",
+    },
+    {
+      Id: 7,
+      Session_ID: 4,
+      Content: "What is SEO?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "hechmi",
+    },
+    {
+      Id: 8,
+      Session_ID: 4,
+      Content: "What is SEA?",
+      CreatedAt: new Date(2018, 1, 15, 10, 0),
+      Author: "mohamed",
+    },
+  ];

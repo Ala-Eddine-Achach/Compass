@@ -1,0 +1,26 @@
+.notif {
+    border-radius: 1.5rem;
+    height: fit-content;
+    font-size: .9rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.notif .img {
+    width: 40px !important;
+}
+.notif img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+
+.notif:hover {
+    transform: scale(1.016);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+}
+.notification-date {
+    font-size: 0.8rem; /* Smaller font size */
+    color: rgba(0, 0, 0, 0.6); /* Lighter color */
+    margin-top: 0.5rem; /* Add some spacing above the date */
+}

@@ -1,0 +1,18 @@
+.admin-header {
+    min-height: 300px;
+    background-color: #D1C4D8;
+    border-radius: 45px 0 0 0;
+
+}
+.card-stats {
+    /*background: #F0EDF2;*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-stats .icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(13, 82, 93, 0.79);
+}

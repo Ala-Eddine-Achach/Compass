@@ -1,0 +1,252 @@
+.midnavbar {
+  display: flex;
+  align-items: center;
+  background-color: #d1c4d8;
+  padding: 0.5rem 0.7rem;
+  padding-right: 0.4rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  position: absolute;
+  height: 63px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+}
+
+.profileMid {
+  display: flex;
+  position: relative;
+  width: 225px;
+  text-decoration: none;
+  color: #262626;
+  align-items: center;
+}
+
+.profilephotoMid {
+  margin-left: 0.25rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.profilephotoMid:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.accountNameMid {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 0.7rem;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.accountNameMid.not-admin:hover {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: 2;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  overflow: visible;
+  white-space: wrap;
+  line-height: 1.2;
+  position: absolute;
+  background-color: #d1c4d8;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  height: 63px;
+  width: 300px;
+  z-index: 1;
+  margin-left: 0;
+  padding-left: 0.1rem;
+}
+
+.BellbuttonMid,
+.LogoutbuttonMid {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.3s;
+  padding: 0.3rem;
+}
+
+.BellbuttonMid {
+  padding-right: 0;
+}
+
+.LogoutbuttonMid {
+  padding-left: 0;
+}
+
+.bellMid,
+.logouttMid {
+  width: 22px;
+}
+
+.bellMid path,
+.logouttMid path {
+  fill: #262626;
+}
+
+.BellbuttonMid:hover .bellMid {
+  animation: bellRing 1s both infinite alternate;
+}
+
+.LogoutbuttonMid:hover .logouttMid {
+  animation: shake 1s ease infinite alternate;
+}
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+  0% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+
+  15% {
+    transform: rotateZ(15deg);
+  }
+
+  30% {
+    transform: rotateZ(-15deg);
+  }
+
+  45% {
+    transform: rotateZ(10deg);
+  }
+
+  60% {
+    transform: rotateZ(-10deg);
+  }
+
+  75% {
+    transform: rotateZ(2deg);
+  }
+}
+
+/* logout button shake animation keyframes*/
+@keyframes shake {
+  0% {
+    transform: translateX(-2px); /* Move left */
+  }
+  50% {
+    transform: translateX(2px); /* Move right */
+  }
+  100% {
+    transform: translateX(0); /* Back to the original position */
+  }
+}
+
+.BellbuttonMid:active,
+.LogoutbuttonMid:active {
+  transform: scale(0.8);
+}
+
+@media (max-width: 650px) {
+  .midnavbar {
+    top: 15px;
+    right: 5px;
+    height: 60px;
+  }
+
+  .profileMid {
+    width: fit-content;
+  }
+
+  .profilephotoMid {
+    margin-right: 0.2rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .accountNameMid {
+    display: none;
+  }
+
+  .BellbuttonMid{
+    padding-left: 0;
+  }
+
+  .CalendarbuttonNav {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.3s;
+    padding: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .calendarNav {
+    width: 26px;
+  }
+
+  .calendarNav path {
+    fill: #262626;
+  }
+
+  .CalendarbuttonNav:hover .calendarNav {
+    animation: draw 0.5s ease  infinite alternate;
+  }
+
+  @keyframes draw {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+  }
+}
+
+@media (max-width: 400px) {
+  .midnavbar {
+    top: 10px;
+    right: 5px;
+    height: 55px;
+  }
+
+  .profileMid {
+    width: fit-content;
+  }
+
+  .profilephotoMid {
+    width: 37px;
+    height: 37px;
+    margin-right: 0.1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .midnavbar {
+    top: 7px;
+    height: 55px;
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+
+  .profilephotoMid {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.2rem;
+  }
+}

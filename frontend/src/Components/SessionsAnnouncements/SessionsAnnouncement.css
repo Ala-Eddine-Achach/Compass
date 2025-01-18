@@ -1,0 +1,29 @@
+.sessionsAnnouncement-box {
+    background-color: #fef7ef;
+    /*width: 698px;*/
+    width: 97%;
+    height: 460px;
+    margin-top: 32px;
+    border-radius: 20px ;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    align-content: center;
+}
+
+.sessionsAnnouncement-title {
+    font-size: 28px;
+    color: #242424;
+    font-weight: 650;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.sessionsAnnouncement-content {
+    margin-top: -18px;
+    padding: 15px;
+    height: 340px;
+}
+
+.no-announcement {
+    width: 50%;
+}

@@ -1,0 +1,100 @@
+
+.side-bar {
+    left: 0;
+    /*z-index: 0 !important;*/
+    background-color: #0D525D;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.07);
+}
+
+
+.side-bar-link {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.side-bar-link path, .side-bar-link p, .link-icons path {
+    color: #ffffffec;
+}
+.recommend-text {
+    font-size: 18px;
+    color: #ffffffec;
+}
+
+
+.side-bar .active:hover {
+    color: #ffffffec;
+}
+
+.sidebar-logo-large {
+    width: auto;
+    height: 100px;
+    margin: 20px 0 10px 0;
+    transition: all 0.6s ease-in
+}
+
+.sidebar-logo-small {
+    width: auto;
+    height: 100px;
+    margin: 20px 0px 10px 0px;
+    transition: all 0.6s ease-in
+}
+
+.side-bar .active {
+    background-color: rgb(242, 243, 254, 0.08);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/*.side-bar-link:hover path,*/
+/*.side-bar-link:hover p, .see-courses:hover .recommend-text{*/
+/*    color: #7ddceb;*/
+/*}*/
+
+.sidebar-icon-button {
+    font-size: 25px;
+}
+
+.sidebar-resize-button {
+    font-size: 20px;
+}
+
+.sidebar-icon-button-messages {
+    font-size: 20px
+}
+
+.sidebar-recommend-icon {
+    width: 50px ;
+    height: auto;
+    margin-left: -16px;
+    max-width: none !important
+
+}
+
+.sidebar-chatbot-div {
+    margin: 0 12px;
+    position: fixed;
+    bottom: 20px;
+    top: 580px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar-chatbot-div:hover {
+    transform: scale(1.05);
+}
+
+.sidebar-chatbot-text {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}

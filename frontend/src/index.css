@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/font/Inter-VariableFont_slnt_wght.ttf);
+}
+
+@font-face {
+  font-family: "Istok Web Regular";
+  src: url(./assets/font/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Istok Web Bold";
+  src: url(./assets/font/IstokWeb-Bold.ttf);
+}
+
+* {
+  color: #242424 ;
+  font-family: "Istok Web Regular";
+  line-height: 1.4em;
+}

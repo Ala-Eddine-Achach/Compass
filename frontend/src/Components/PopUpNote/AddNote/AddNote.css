@@ -1,0 +1,177 @@
+.titlePopUp {
+  position: absolute;
+  top: 19px;
+  font-size: xx-large;
+}
+
+.noteInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 25px;
+  border-radius: 50px;
+  max-height: 65px;
+}
+
+.noteSubjectTypePopUp {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #f0edf2;
+  /* background-color: #fae6d2; */
+  max-width: 200px;
+  max-height: 65px;
+  border: 1px solid #ccc;
+}
+
+.noteST {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 57px;
+}
+
+.s,
+.t {
+  font-size: 15px;
+  font-weight: bolder;
+  /*color: #FEF7EF;*/
+}
+.t {
+  font-size: 12px;
+}
+.s {
+  max-height: 35px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.noteDateTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  max-width: 200px;
+  height: 65px;
+}
+
+.noteDatePopUp,
+.noteSessionTimePopUp {
+  display: flex;
+  margin: 3px 0;
+  font-size: 11px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 3px 6px;
+  border-radius: 15px;
+  background-color: #f0edf2;
+  /*color: #FEF7EF;*/
+  width: 170px;
+  border: 1px solid #ccc;
+}
+
+.noteSessionTimePopUp div,
+.noteDatePopUp div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3px;
+  /*color: #FEF7EF;*/
+}
+
+.noteContentPopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 500px;
+  height: 350px;
+  margin: 10px;
+}
+
+.title-input {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 5px 0;
+  padding: 0 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.title-input input {
+  width: 100%;
+  height: 80%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.content-input {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 230px;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.addNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 0;
+  height: 35px;
+  width: 100px;
+  /* padding: 0 20px; */
+  border-radius: 15px;
+  background-color: #733c6b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  color: #fef7ef;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+  transition: all 0.5s ease;
+}
+
+.addNote:hover {
+  letter-spacing: 0.08rem;
+  background-color: #6e3365;
+  box-shadow: rgb(25, 42, 23) 0px 1px 5px 0px;
+}
+
+.addNote:active {
+  letter-spacing: 0.1rem;
+  background-color: #5e2956;
+  box-shadow: rgb(25, 42, 23) 0px 1px 5px 0px;
+  transform: translateY(2px);
+  transition: 100ms;
+}
+
+.addNoteHr {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #262626;
+}
+.title-input input::placeholder {
+  font-weight: lighter;
+}

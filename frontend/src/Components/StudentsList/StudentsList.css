@@ -1,0 +1,27 @@
+.students-list {
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5em;
+    background-color: #F0EDF2;
+}
+.students-list .student-item-home {
+    border-radius: 15px;
+    /*box-shadow:  3px 3px 9px rgba(0, 0, 0, 0.16);*/
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.16);
+    width: 90%;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    background-color: #FFFEFB;
+    height: 33px;
+}
+.scroll-students{
+    overflow-y: auto;
+    width: 100%;
+    scrollbar-width: none;
+}
+.students-list .student-username {
+    overflow: hidden;
+    scrollbar-width: none;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    overflow-x: auto;
+}

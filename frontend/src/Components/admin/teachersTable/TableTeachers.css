@@ -1,0 +1,172 @@
+.addbtn, .addbtn2{
+    background-color: #692E5F !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border:none !important;
+    max-width: 181px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.addbtn span, .addbtn2 span {
+    color: white;
+}
+
+.table-teacher {
+    width: 100%;
+    /*border-collapse: collapse;*/
+    border-radius: 20px;
+    overflow: hidden;
+}
+.head-table tr th{
+    background-color: rgba(240, 237, 242, 0.54);
+    color: #606060;
+    font-weight: lighter;
+    border: none;
+}
+
+.all-teachers td {
+    padding: 10px !important;
+    border: none;
+    font-size: 15px;
+    color: #606060 !important;
+}
+
+.admins td {
+    padding: 10px !important;
+    border: none;
+    font-size: 14px;
+    color: #606060 !important;
+}
+
+.table-teacher .container-input {
+    position: relative;
+}
+
+.table-teacher .input {
+    width: 100%;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.admins .input {
+    width: 125%;
+}
+.table-teacher .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.table-teacher .input:focus {
+    opacity: 1;
+    width: 140%;
+    background-color: white;
+}
+
+.link-form.add-new input {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 12px;
+    width: 100%;
+    height: 45px;
+}
+.basic-single {
+    width: 100% !important;
+}
+.select__value-container {
+    height: 45px !important;
+}
+.select__control {
+    border-radius: 12px !important;
+    height: 45px !important;
+    border: 1px solid #ccc !important;
+}
+.select__control--menu-is-open {
+    /*border: 1px solid #ccc !important;*/
+    border: none !important;
+}
+.select__menu > * {
+    max-height: 185px !important;
+}
+
+.link-form.add-new .end button {
+    background-color: #692e5f;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+    color: white;
+    padding: 0.5rem 1.3rem;
+    border-radius: 2rem;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.link-form.add-new .end button:hover {
+    letter-spacing: 0.08rem;
+    background-color: rgba(105, 46, 95, 90%);
+    box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+}
+
+.link-form.add-new .end button:active {
+    letter-spacing: 0.1rem;
+    background-color: rgba(105, 46, 95, 90%);
+    box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+    transform: scale(0.9);
+    transition: 100ms;
+}
+.link-form.add-new input {
+  margin: 5px 0;
+}
+.add-photo {
+    padding: 5px 10px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+.add-photo p {
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.link-form.new input {
+    width: 90%;
+    margin: 8px 0;
+}
+.link-form.new .basic-single {
+    width: 90% !important;
+    margin: 8px 0;
+}
+
+.Toastify__toast {
+    overflow-y: auto !important;
+    border-radius: 12px !important;
+    margin-right: 5px !important;
+    max-height: 200px !important;
+}
+
+.Toastify__toast::-webkit-scrollbar {
+    width: 8px !important;
+
+}
+
+.Toastify__toast::-webkit-scrollbar-track {
+    background: rgba(255, 123, 123, 0.47);
+    border-radius: 10px !important;
+}
+
+.Toastify__toast::-webkit-scrollbar-thumb {
+    background: rgba(157, 7, 7, 0.68) !important;
+    border-radius: 10px !important;
+}
+.Toastify__toast-body > div,.Toastify__toast-body path, .Toastify__close-button path {
+    color: white !important;
+}
+
+.Toastify__toast--success {
+    background-color: #0D525D !important;
+}

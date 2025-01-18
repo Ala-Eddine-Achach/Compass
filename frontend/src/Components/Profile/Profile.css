@@ -1,0 +1,44 @@
+
+.profile-box {
+    background-color: #d1c4d8;
+    width: 100%;
+    max-width: 350px; /* Adjust max-width as needed */
+    height: fit-content;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.profile-name {
+    font-size: 1.5rem; /* 24px */
+}
+
+.profile-enrolment {
+    background-color: #fdfdfd;
+}
+
+.profile-cp {
+    background-color: #fdfdfd;
+    font-size: 1rem; /* 16px */
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+.profile-cp:hover {
+    transform: scale(1.05);
+}
+
+.profile-cp:active {
+    transform: scale(0.96);
+}
+
+.profile-info {
+    background-color: #fdfdfd;
+    font-size: 1rem; /* 16px */
+}
+
+.edit-photo-button, .check-button-profile {
+    transition: transform 0.5s ease;
+}
+
+.edit-photo-button:active, .check-button-profile:active{
+    transform: scale(0.96);
+}

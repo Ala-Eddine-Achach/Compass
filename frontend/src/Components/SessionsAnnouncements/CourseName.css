@@ -1,0 +1,42 @@
+.course-name-box {
+    background-color: #fef7ef;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px ;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.course-name-title {
+    font-size: 28px;
+    font-weight: 650;
+    text-align: left;
+    max-width: 100%;
+    max-height: 40px;
+    word-break: break-all;
+}
+
+.course-additional-info {
+    font-size: 16px;
+    text-align: left;
+    color: #747270;
+}
+
+.course-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.course-info {
+    margin-left: 14px;
+}
+
+.course-teacher-photo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}

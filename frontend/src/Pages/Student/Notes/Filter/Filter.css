@@ -1,0 +1,273 @@
+.paste-buttonFilter {
+  position: relative;
+  display: flex;
+  margin-left: 15px;
+  background-color: #fef7ef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px;
+  padding-right: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.clearButton {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearButton:hover {
+  animation: grow-shrink 1.5s infinite;
+}
+
+.clearButton-active {
+  background-color: #fdd5a9;
+}
+
+.clearButton:disabled, .clearButton:disabled:hover {
+  opacity: 0.5;
+  animation: none;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buttonFilterD,
+.buttonFilterS {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: space-around;
+}
+
+.buttonFilterD {
+  width: 80px;
+}
+
+.buttonFilterS {
+  width: 100px;
+}
+
+.buttonFilterD svg:first-of-type {
+  width: 17px;
+  height: 17px;
+}
+
+.buttonFilterS svg:first-of-type {
+  width: 18px;
+  height: 18px;
+}
+
+.buttonFilterS > div,
+.buttonFilterD > div {
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.buttonFilterD:hover *,
+.buttonFilterS:hover * {
+  transform: scale(1.05);
+}
+
+.SubjectFilter {
+  margin-top: 8px;
+  border: 5px solid transparent;
+  right: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  background-color: #fef7ef;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  column-count: 3;
+  column-gap: 15px;
+  column-rule: 0.05rem solid #8e8e8e;
+  padding: 5px 0;
+  max-height: 13em;
+  overflow: auto;
+  /* column-fill: auto; */
+}
+
+/* .SubjectFilter {
+  margin-top: 8px;
+  border: 5px solid transparent;
+  right: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  background-color: #fef7ef;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  column-rule: 0.05rem solid #8e8e8e;
+  padding: 5px 0;
+  display: block;
+  height: calc(55px * 3);
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+  overflow-x: scroll; 
+}
+
+.SubjectFilter a {
+  display: inline-block; 
+  width: 100%;
+  height: 45px;
+} */
+
+.SubjectFilter::-webkit-scrollbar {
+  height: 8px;
+}
+
+.SubjectFilter::-webkit-scrollbar-track {
+  background: #f0edf2;
+  border-radius: 10px;
+}
+
+.SubjectFilter::-webkit-scrollbar-thumb {
+  background: #d1c4d8;
+  border-radius: 10px;
+}
+
+.SubjectFilter::-webkit-scrollbar-thumb:hover {
+  background: #803f75;
+}
+
+.SubjectFilter a {
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  transition: 0.1s;
+}
+
+.SubjectFilter a:hover {
+  background-color: #f9ebdc;
+  color: #000000;
+  transform: scale(1.005);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.SubjectFilter a:focus {
+  background-color: #ffead4;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.SubjectFilter a:first-child:hover,
+.SubjectFilter a:first-child:focus {
+  border-radius: 13px 5px 5px 5px;
+}
+
+.buttonFilterS.active,
+.buttonFilterD.active {
+  border-radius: 15px 15px 2px 2px;
+}
+
+.DateFilter {
+  margin-top: 8px;
+  min-width: 230px;
+  border: 5px solid transparent;
+  right: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  background-color: #fef7ef;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  border: none;
+  background-color: #fef7ef;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 90%;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.react-datepicker__input-container ::placeholder {
+  padding-left: 3px;
+}
+
+.react-datepicker__input-container button {
+  padding-right: 0px;
+}
+
+button.react-datepicker__close-icon::after {
+  background-color: rgb(48, 48, 48);
+}
+
+.react-datepicker-popper div {
+  border-radius: 15px;
+  background-color: #fef7ef;
+}
+
+.react-datepicker-popper {
+  margin-top: 8px;
+}
+
+div.react-datepicker__header {
+  margin: 1.6em;
+  padding: 0;
+  border: black;
+}
+
+button.react-datepicker__navigation {
+  margin: 1rem;
+}
+
+div.react-datepicker__month {
+  margin: 0.4em;
+  padding: 0;
+}
+
+div.react-datepicker__day-names {
+  font-weight: 600;
+  border-color: #8e8e8e;
+  border-width: 2px;
+  margin-top: 0.3rem;
+}
+
+div.react-datepicker__day:hover {
+  border-radius: 10px;
+}
+
+div.react-datepicker__day--selected {
+  font-weight: 800;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+}
+
+div.react-datepicker__day:hover {
+  background-color: rgba(128, 63, 117, 0.2);
+  color: black;
+}
+
+div.react-datepicker__day--today {
+  background-color: #935289;
+  color: white;
+  border-radius: 10px;
+}

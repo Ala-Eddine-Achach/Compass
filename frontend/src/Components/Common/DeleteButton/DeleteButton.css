@@ -1,0 +1,25 @@
+.delete.btn {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    height: fit-content;
+}
+.delete.btn > .icon path {
+    fill: #717171;
+}
+
+.delete .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+}
+
+.delete.btn:hover > .icon {
+    transform: scale(1.1);
+}
+
+.delete.btn:hover > .icon path {
+    fill: #692E5F;
+}
+
+
+

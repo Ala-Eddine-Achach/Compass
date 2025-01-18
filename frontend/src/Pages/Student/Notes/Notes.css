@@ -1,0 +1,61 @@
+.date {
+  color: #5e5e5e !important;
+}
+.my-notes {
+  background-color: #fef7ef;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  border-radius: 1.5em;
+}
+
+.my-notes.more-margin {
+  margin-top: 40px !important;
+}
+
+.emptyNotes {
+  margin-top: 40px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #898989;
+  background-color: #fef7ef;
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.custom-col-c {
+  padding: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+@media (min-width: 1370px) {
+  .custom-col-c {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1369px) {
+  .custom-col-c {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .custom-col-c {
+    width: 50%;
+  }
+}
+
+@media (max-width: 799px) {
+  .custom-col-c {
+    width: 60%;
+  }
+}

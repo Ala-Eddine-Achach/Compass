@@ -1,0 +1,67 @@
+.presence-sheet-box {
+    background-color: rgb(254, 247, 239);
+    /*min-width: 300px;*/
+    border-radius: 20px;
+}
+
+.p-s-btn {
+    background-color: #6a2f60;
+}
+
+.p-s-btn:hover {
+    background-color: #6a2f60;
+}
+
+.p-s-btn span {
+    color : whitesmoke;
+}
+
+.p-s-student-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.presence-sheet-box .dropdown-course-content {
+    position: absolute;
+    z-index: 1;
+    background: #FFFEFC;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+    margin-left: -115px;
+    margin-top: -31px;
+    border-radius: 15px;
+}
+.presence-sheet-box .dropdown-course-content .dropdown-course-item {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    height: 35px;
+    padding: 16px 10px;
+}
+
+.presence-sheet-box .dropdown-course-content .dropdown-course-item:hover {
+    color: white;
+    background-color: #733c6b;
+    border-radius: 0 0 15px 15px;
+    font-weight: bold;
+}
+.presence-sheet-box  .dropdown-course-content .dropdown-course-item:first-child {
+    border-radius: 15px 15px 0 0;
+}
+.session-buttons {
+    transition: all 0.3s ease;
+}
+.session-buttons:hover {
+    background-color: rgba(105, 46, 95, 90%);
+    box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+}
+.take-attendance {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}

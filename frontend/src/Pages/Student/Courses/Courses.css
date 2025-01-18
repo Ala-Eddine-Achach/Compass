@@ -1,0 +1,42 @@
+
+.date {
+    color: #5e5e5e !important;
+}
+.my-courses {
+    background-color: #FEF7EF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    border-radius: 1.5em;
+}
+.my-courses h1 {
+    font-size: 35px;
+}
+
+.my-courses.more-margin {
+    margin-top: 40px !important;
+}
+
+
+@media (min-width: 1370px) {
+    .custom-col-c {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1369px) {
+    .custom-col-c {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    .custom-col-c {
+        width: 50%;
+    }
+}
+
+@media (max-width: 799px) {
+    .custom-col-c {
+        width: 60%;
+    }
+}

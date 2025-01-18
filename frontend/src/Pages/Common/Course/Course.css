@@ -1,0 +1,14 @@
+.course-page .date {
+    width: fit-content;
+}
+
+.course-page {
+    height: 100%;
+}
+
+@media (max-width: 575px) {
+    .course-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

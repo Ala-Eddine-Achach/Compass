@@ -1,0 +1,37 @@
+.e-appointment {
+    border-radius: 10px !important;
+    background: white !important;
+    color: rgba(0, 0, 0, 0.721) !important;
+    font-size: 12px;
+    font-weight: 500;
+    width: 99% !important;
+    height: 95%;
+    padding: 0;
+    border: none !important;
+}
+
+.e-appointment:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+}
+
+.e-add {
+    display: none !important;
+}
+
+/* .e-schedule,
+.e-schedule-toolbar,
+.e-toolbar-items.e-tbar-pos,
+.e-vertical-view,
+.e-date-header-wrap,
+table,
+tbody,
+td.e-header-cells,
+.e-vertical-view,
+.e-content-wrap,
+table,
+td {
+    background-color: #D1C4D8 !important;
+}
+
+.e-schedule .e-schedule-toolbar .e-toolbar-items.e-tbar-pos {
+    /* display: none; }*/

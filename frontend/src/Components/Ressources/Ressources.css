@@ -1,0 +1,90 @@
+.ressources-box {
+    background-color: rgba(233, 177, 176, 0.17);
+    width: 100%;
+    max-width: 355px;
+    /*min-width: 300px;*/
+    border-radius: 40px;
+}
+
+.ressources-title {
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.ressources-file {
+    font-size: 0.9rem;
+    background-color: rgba(233, 177, 176, 0.4);
+}
+
+.ressources-content {
+    margin-top: -22px;
+}
+
+.file-icon path {
+    color: #443E3D;
+}
+
+.ressources-icon path {
+    color: #443E3D;
+}
+
+.ressources-icon:hover path {
+    color: #131111;
+}
+
+.file-delete-button {
+    margin-right: 9px;
+}
+
+/* popup.css */
+.popup-content-resources {
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.popup-content-resources h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.popup-content-resources p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.popup-content-resources button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content-resources button:last-of-type {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.popup-content-resources button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+.popup-content-resources button:first-of-type {
+    background-color: #bdc3c7;
+    color: #333;
+}
+
+.popup-content-resources button:first-of-type:hover {
+    background-color: #95a5a6;
+}
+
+
+

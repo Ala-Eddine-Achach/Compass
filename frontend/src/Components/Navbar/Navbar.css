@@ -1,0 +1,214 @@
+.profileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 19rem;
+}
+
+.profilephoto {
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+
+.accountName {
+  color: #262626;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.6rem 0.9rem;
+  line-height: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.accountName:hover {
+  display: unset;
+}
+
+.nameButton {
+  background-color: #692e5f;
+  font-size: 1.1rem;
+  letter-spacing: 0.06rem;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.nameButton:hover {
+  letter-spacing: 0.08rem;
+  background-color: rgba(105, 46, 95, 90%);
+  box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+}
+
+.nameButton:active {
+  letter-spacing: 0.1rem;
+  background-color: rgba(105, 46, 95, 90%);
+  box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+  transform: translateY(2px);
+  transition: 100ms;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  /* height: fit-content; */
+  /* background-color: aqua; */
+}
+
+.calendardiv {
+  display: none;
+}
+
+.calendarButton {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .profileNav {
+    height: 19rem;
+  }
+
+  .profilephoto {
+    width: 120px;
+    height: 120px;
+  }
+
+  .accountName {
+    font-size: 1.4rem;
+    margin: 0.4rem 0.8rem;
+  }
+
+  .nameButton {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .profileNav {
+    height: 16rem;
+  }
+
+  .profilephoto {
+    margin-top: 0.9rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .accountName {
+    font-size: 1.3rem;
+    margin: 0.3rem 0.6rem;
+    display: unset;
+  }
+
+  .nameButton {
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .calendar {
+    display: none;
+  }
+
+  .calendardiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .calendarButton {
+    display: flex;
+    background-color: #692e5f;
+    font-size: 1rem;
+    letter-spacing: 0.06rem;
+    padding: 0.4rem 1rem;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transition: all 0.5s ease;
+  }
+
+  .calendarButton:hover {
+    letter-spacing: 0.08rem;
+    background-color: rgba(105, 46, 95, 90%);
+    box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+  }
+
+  .calendarButton:active {
+    letter-spacing: 0.1rem;
+    background-color: rgba(105, 46, 95, 90%);
+    box-shadow: rgb(105, 46, 95) 0px 1px 5px 0px;
+    transform: translateY(2px);
+    transition: 100ms;
+  }
+}
+
+/*@media (max-width: 700px) {*/
+/*  .profileNav {*/
+/*    height: 15rem;*/
+/*  }*/
+
+/*  .profilephoto {*/
+/*    margin-top: 1rem;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*  }*/
+
+/*  .accountName {*/
+/*    font-size: 1.2rem;*/
+/*    margin: 0.3rem 0.3rem;*/
+/*    margin-top: 0.5rem;*/
+/*  }*/
+
+/*  .nameButton {*/
+/*    margin-top: 2.1rem;*/
+/*  }*/
+/*}*/
+/* 
+@media (max-width: 600px) {
+  .barr {
+    width: 8.5rem;
+    height: max-content;
+  }
+
+  .profilephoto {
+    position: absolute;
+    margin-top: 0;
+    top: 4px;
+    right: 85px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .nameButton {
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+    margin: 0.2rem 0.1rem;
+  }
+  .accountName {
+    display: none;
+  }
+
+  .profilephoto:hover {
+    cursor: pointer;
+  }
+  .profilephoto:hover ~ .accountName {
+    display: flex;
+  }
+} */

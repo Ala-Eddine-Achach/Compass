@@ -1,0 +1,19 @@
+.scroll-container {
+    max-height: var(--max-height);
+    overflow-y: auto;
+    width: 100%;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: var(--track-color);
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: var(--thumb-color);
+    border-radius: 10px;
+}

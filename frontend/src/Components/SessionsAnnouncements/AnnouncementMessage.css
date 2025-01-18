@@ -1,0 +1,49 @@
+.announcement-item {
+    background-color: #fdfdfd;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    width: 95%;
+    /*max-width: 620px;*/
+    display: flex;
+    padding: 0 20px 10px 20px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-icon {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.announcement-icon svg {
+
+}
+
+.announcement-icon path {
+    color: #d5d3d1;
+}
+
+.announcement-element {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.announcement-date {
+    font-size: 13px;
+    color: #747270;
+    margin-bottom: 5px;
+}
+
+.announcement-teacher {
+    font-size: 16px;
+    color: #514e4e;
+}
+
+.announcement-description {
+    line-height: 15px;
+    font-size: smaller;
+    height: fit-content;
+}
