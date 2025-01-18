@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@nest-middlewares/helmet": "^10.0.0",
+    "@nestjs/serve-static": "^4.0.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12"
+  }
+}
