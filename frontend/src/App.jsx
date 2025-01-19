@@ -18,110 +18,102 @@ import Attendance from "./Pages/Teacher/Attendance.jsx";
 import { NoteProvider } from "./Context/NoteContext.jsx";
 import PageNotFound from "./Pages/Auth/PageNotFound.jsx";
 import RequireLogin from "./Pages/Auth/RequireLogin.jsx";
-import WebcamCapture from  "./Components/FaceRecognition/WebcamCapture.jsx"
+import WebcamCapture from "./Components/FaceRecognition/WebcamCapture.jsx";
 import HomeAdmin from "./Pages/Admin/Home/HomeAdmin.jsx";
 import ProfessorsAdmin from "./Pages/Admin/Professor/ProfessorsAdmin.jsx";
 import StudentsAdmin from "./Pages/Admin/Student/StudentsAdmin.jsx";
 import CoursesAdmin from "./Pages/Admin/Course/CoursesAdmin.jsx";
 import Profile from "./Pages/Admin/Profile/profile.jsx";
+
 import { useParams } from "react-router-dom";
+import FantasyGame from "./Components/FantasyGame/FantasyGame.jsx";
+
 export default function App() {
   const NoteProviderWrapper = () => {
     const { id } = useParams(); // Get the session id from the path
 
     return (
-      <NoteProvider sessionId={id}>
-        <SessionStudent />
-      </NoteProvider>
+        <NoteProvider sessionId={id}>
+          <SessionStudent />
+        </NoteProvider>
     );
   };
-  return (
-    <>
-      <Routes>
-        <Route path="/login" element={<RequireLogin />} />
-        <Route path="/face-recognition" element={<WebcamCapture />} />
-        <Route element={<RequireLogin />}>
-          <Route element={<Layout />}>
-            <Route element={<RequireRole allowedRole={["student"]} />}>
-              <Route path="/student/chat" element={<SessionStudent />}></Route>
-              <Route
-                path="/student/home"
-                element={
-                  <NoteProvider>
-                    <HomeStudent />
-                  </NoteProvider>
-                }
-              ></Route>
-              <Route path="student/courses" element={<Courses />}></Route>
-              <Route
-                path="student/notes"
-                element={
-                  <NoteProvider>
-                    <Notes />
-                  </NoteProvider>
-                }
-              ></Route>
-              <Route
-                path="student/profile"
-                element={<ProfileStudent />}
-              ></Route>
-              <Route
-                path="student/session/:id"
-                // path="student/session/:id"
-                element={<NoteProviderWrapper />}
-              ></Route>
-              <Route
-                path="student/calendar"
-                element={<StudentCalendar />}
-              ></Route>
-            </Route>
-            <Route element={<RequireRole allowedRole={["teacher"]} />}>
-              <Route path="/teacher/home" element={<HomeTeacher />}></Route>
-              <Route
-                path="teacher/profile"
-                element={<ProfileTeacher />}
-              ></Route>
 
+  return (
+      <>
+        <Routes>
+          <Route path="/login" element={<RequireLogin />} />
+          <Route path="/face-recognition" element={<WebcamCapture />} />
+          <Route element={<RequireLogin />}>
+            <Route element={<Layout />}>
+              <Route element={<RequireRole allowedRole={["student"]} />}>
+                <Route path="/student/chat" element={<SessionStudent />} />
+                <Route
+                    path="/student/home"
+                    element={
+                      <NoteProvider>
+                        <HomeStudent />
+                      </NoteProvider>
+                    }
+                />
+                <Route path="student/courses" element={<Courses />} />
+                <Route
+                    path="student/notes"
+                    element={
+                      <NoteProvider>
+                        <Notes />
+                      </NoteProvider>
+                    }
+                />
+                <Route path="student/profile" element={<ProfileStudent />} />
+                <Route
+                    path="student/session/:id"
+                    element={<NoteProviderWrapper />}
+                />
+                <Route path="student/calendar" element={<StudentCalendar />} />
+
+                {/* Fantasy Game Routes */}
+                <Route path="/fantasy" element={<FantasyGame />} />
+              </Route>
+              <Route element={<RequireRole allowedRole={["teacher"]} />}>
+                <Route path="/teacher/home" element={<HomeTeacher />} />
+                <Route path="teacher/profile" element={<ProfileTeacher />} />
+                <Route path="teacher/session/:id" element={<SessionTeacher />} />
+                <Route
+                    path="teacher/session/:id/attendance"
+                    element={<Attendance />}
+                />
+                <Route
+                    path="teacher/calendar/:id?"
+                    element={<TeacherCalendar />}
+                />
+              </Route>
               <Route
-                path="teacher/session/:id"
-                element={<SessionTeacher />}
-              ></Route>
-              <Route
-                path="teacher/session/:id/attendance"
-                element={<Attendance />}
-              ></Route>
-              <Route
-                path="teacher/calendar/:id?"
-                element={<TeacherCalendar />}
-              ></Route>
+                  element={<RequireRole allowedRole={["student", "teacher"]} />}
+              >
+                <Route path="/course/:id" element={<Course />} />
+              </Route>
+              <Route element={<RequireRole allowedRole={["admin"]} />}>
+                <Route path="admin/home" element={<HomeAdmin />} />
+                <Route
+                    path="admin/professors"
+                    element={<ProfessorsAdmin />}
+                />
+                <Route path="admin/students" element={<StudentsAdmin />} />
+                <Route
+                    path="admin/calendar/:id?"
+                    element={<CalendarAdmin />}
+                />
+                <Route path="admin/courses" element={<CoursesAdmin />} />
+                <Route
+                    path="admin/profile/:id/:role"
+                    element={<Profile />}
+                />
+              </Route>
+              <Route path="*" element={<PageNotFound />} />
             </Route>
-            <Route
-              element={<RequireRole allowedRole={["student", "teacher"]} />}
-            >
-              {/*<Route path="/chat" element={<SessionTeacher />}></Route>*/}
-              <Route path="/course/:id" element={<Course />}></Route>
-            </Route>
-            <Route element={<RequireRole allowedRole={["admin"]} />}>
-              <Route path="admin/home" element={<HomeAdmin />}></Route>
-              <Route
-                path="admin/professors"
-                element={<ProfessorsAdmin />}
-              ></Route>
-              <Route path="admin/students" element={<StudentsAdmin />}></Route>
-              <Route
-                path="admin/calendar/:id?"
-                element={<CalendarAdmin />}
-              ></Route>
-              <Route path="admin/courses" element={<CoursesAdmin />}></Route>
-              <Route
-                path="admin/profile/:id/:role"
-                element={<Profile />}
-              ></Route>
-            </Route>
-            <Route path="*" element={<PageNotFound />}></Route>
           </Route>
-        </Route>
-      </Routes>
-    </>
+        </Routes>
+      </>
   );
 }

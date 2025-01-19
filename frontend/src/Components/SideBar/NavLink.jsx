@@ -39,6 +39,12 @@ export const links = [
         role: 'student'
     },
     {
+        name: "Fantasy Game",
+        path: "/fantasy",
+        icon: faGraduationCap, // Add an appropriate icon
+        role: 'student'
+    },
+    {
         name: "My Calendar",
         path: "student/calendar",
         icon: faCalendarDays,
