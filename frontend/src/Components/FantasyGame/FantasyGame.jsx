@@ -1,28 +1,102 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Cookie from "cookie-universal";
 import "./FantasyGame.css";
+//import url base
+import { baseURL } from "../../Api/Api";
+
+// Add Axios interceptors for logging requests and responses
+axios.interceptors.request.use(
+    (config) => {
+        console.log(`I'm the request to: ${config.url}`); // Log the request URL
+        return config;
+    },
+    (error) => {
+        console.error("Request error:", error); // Log request errors
+        return Promise.reject(error);
+    }
+);
+
+axios.interceptors.response.use(
+    (response) => {
+        console.log(`I'm the response from: ${response.config.url}`, response.data); // Log the response
+        return response;
+    },
+    (error) => {
+        console.error("Response error:", error); // Log response errors
+        return Promise.reject(error);
+    }
+);
 
 export default function FantasyGame() {
-    const [subjects, setSubjects] = useState([]);
-    const [selectedSubjects, setSelectedSubjects] = useState([]);
-    const maxSubjects = 5;
+    const [subjects, setSubjects] = useState([]); // Available subjects
+    const [selectedSubjects, setSelectedSubjects] = useState([]); // Selected lineup
+    const maxSubjects = 5; // Max lineup size
 
+    // Fetch available subjects on component mount
     useEffect(() => {
-        // Fetch available subjects from API
+        const userToken = Cookie().get("compass"); // Get token from cookies
         axios
-            .get("/{API_URL}/fantasy")
-            .then((res) => setSubjects(res.data))
+            .get(`${baseURL}/fantasy/subjects`, {
+                headers: {
+                    Authorization: `Bearer ${userToken}`,
+                },
+            })
+            .then((res) => {
+                console.log("Response Data:", res.data); // Debugging
+                if (Array.isArray(res.data)) {
+                    // Add a default score to each subject
+                    const subjectsWithScore = res.data.map(subject => ({
+                        ...subject,
+                        score: 0, // Default score
+                    }));
+                    setSubjects(subjectsWithScore);
+                } else {
+                    console.error("Invalid response format: Expected an array");
+                }
+            })
             .catch((err) => console.error("Error fetching subjects:", err));
     }, []);
 
+    // Handle subject selection
     const handleSubjectSelection = (subject) => {
+        // Ensure the selected subjects don't exceed the max count and avoid duplicates
         if (selectedSubjects.length < maxSubjects && !selectedSubjects.includes(subject)) {
             setSelectedSubjects([...selectedSubjects, subject]);
         }
     };
 
+    // Remove a subject from the lineup
     const removeSubject = (subject) => {
         setSelectedSubjects(selectedSubjects.filter((s) => s.id !== subject.id));
+    };
+
+    // Save the fantasy lineup
+    const saveFantasyLineup = () => {
+        const userToken = Cookie().get("compass"); // Get token from cookies
+
+        // Construct lineup payload
+        const lineupData = {
+            subjects: selectedSubjects.map((subject) => ({
+                id: subject.id,
+                name: subject.name,
+                score: subject.score,
+            })),
+        };
+
+        // Send lineup to the backend
+        axios
+            .post(`${baseURL}/fantasy`,
+                lineupData, {
+                headers: {
+                    Authorization: `Bearer ${userToken}`,
+                },
+            })
+            .then((res) => {
+                alert("Fantasy lineup saved successfully!");
+                console.log("Response:", res.data);
+            })
+            .catch((err) => console.error("Error saving lineup:", err));
     };
 
     return (
@@ -66,6 +140,15 @@ export default function FantasyGame() {
                     </div>
                 ))}
             </div>
+
+            {/* Save Button */}
+            <button
+                onClick={saveFantasyLineup}
+                disabled={selectedSubjects.length !== maxSubjects}
+                className="save-button"
+            >
+                Save Lineup
+            </button>
         </div>
     );
 }
