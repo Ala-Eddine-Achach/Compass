@@ -95,21 +95,18 @@
     npm start
     
     ```
-7.  Run the Course Recommendation API :
+8.  Run the Course Recommendation API :
     
     ```bash
     python main.py
     
     ```
     
-10.  Run the application in the frontend :
-        
-    ```bash
+9.  Run the application in the frontend :
+     ```bash
     cd ../frontend
     npm run dev 
-    
     ```
-
 #### Usage Instructions
 
 -   **Step 1:** Access the application via the localhost URL provided by the terminal output.
