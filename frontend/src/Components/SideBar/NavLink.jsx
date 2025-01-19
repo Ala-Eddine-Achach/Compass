@@ -4,7 +4,7 @@ import {
     faComments,
     faNoteSticky,
     faCalendarDays,
-    faChartLine, faChalkboardUser, faGraduationCap,
+    faChartLine, faChalkboardUser, faGraduationCap, faRankingStar,
 } from '@fortawesome/free-solid-svg-icons'
 
 export const links = [
@@ -42,6 +42,12 @@ export const links = [
         name: "Fantasy Game",
         path: "/fantasy",
         icon: faGraduationCap, // Add an appropriate icon
+        role: 'student'
+    },
+    {
+        name: "leaderboard",
+        path: "/leaderboard",
+        icon: faRankingStar, // Add an appropriate icon
         role: 'student'
     },
     {

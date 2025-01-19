@@ -27,6 +27,7 @@ import Profile from "./Pages/Admin/Profile/profile.jsx";
 
 import { useParams } from "react-router-dom";
 import FantasyGame from "./Components/FantasyGame/FantasyGame.jsx";
+import Leaderboard from "./Components/leaderboard/Leaderboard.jsx";
 
 export default function App() {
   const NoteProviderWrapper = () => {
@@ -74,6 +75,9 @@ export default function App() {
 
                 {/* Fantasy Game Routes */}
                 <Route path="/fantasy" element={<FantasyGame />} />
+
+                <Route path="/leaderboard" element={<Leaderboard />} />
+
               </Route>
               <Route element={<RequireRole allowedRole={["teacher"]} />}>
                 <Route path="/teacher/home" element={<HomeTeacher />} />
