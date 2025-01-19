@@ -18,6 +18,12 @@
     
 -   **Leaderboards:** A competitive leaderboard tracks user rankings based on their total scores, fostering a healthy competition among learners.
 
+-   **Notes**
+-   **Chat Bot**
+-   **Calendar**
+-   **Course Recommendation**
+-   **Kudos**: Express gratitude & emphasize collaboration
+
     
 
 ----------
@@ -27,6 +33,7 @@
 -   **Frontend:** React, HTML, CSS
 -   **Backend:** Node.js, NestJS
 -   **Database:** MySQL
+-   **ML/AI:** Scikit, Flusk, GeminiAPI
 -   **Other Tools:** Axios, Cookie-Universal
 
 ----------
@@ -35,6 +42,7 @@
 
 #### Prerequisites
 
+-   Python 3.8 or higher
 -   Node.js version 14 or higher
 -   MySQL
 
@@ -47,32 +55,57 @@
     
     ```
     
-2.  Navigate to the project directory:
+2.  Navigate to the projects directory:
     
     ```bash
     cd compass
     
     ```
-    
-3.  Install dependencies:
+3.  Navigate to the frontend directory and install dependencies:
     
     ```bash
+    cd frontend
+    npm install
+    
+    ```
+4.  Navigate to the CourseRecommendationAPI directory and install dependencies:
+    
+    ```bash
+    cd ..
+    cd CourseRecommendationAPI
+    pip install -r requirements.txt
+    
+    ```
+    
+5.  Navigate to the frontend directory and install dependencies:
+    
+    ```bash
+    cd ..
+    cd backend
     npm install
     
     ```
     
-4.  Configure the database:
+6.  Configure the database:
     
     -   Update the `.env` file with your MySQL credentials.
-5.  Run the application in the backend :
+7.  Run the application in the backend :
     
     ```bash
     npm start
     
     ```
-6.  Run the application in the frontend :
+7.  Run the Course Recommendation API :
+    
+    ```bash
+    python main.py
+    
+    ```
+    
+10.  Run the application in the frontend :
         
     ```bash
+    cd ../frontend
     npm run dev 
     
     ```
@@ -100,6 +133,8 @@ AI chatbot
 ![AI chatbot](https://scontent.fnbe1-2.fna.fbcdn.net/v/t1.15752-9/473450482_1784716848929787_8871146819436950441_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=OVK7sNyU5jkQ7kNvgGgsmZb&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&oh=03_Q7cD1gE8-hP16eRu8DL7bwos2yPnIX4Ihtyatv3KZXQjsnAwbw&oe=67B3FDB2)
 Student Calendar
 ![Student Calendar](https://scontent.fnbe1-2.fna.fbcdn.net/v/t1.15752-9/473258498_1672358397034772_1391793804125370478_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ItUNBBSl2PYQ7kNvgFoluM7&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&oh=03_Q7cD1gHCf3PX1O_SB2DLXHEiq2Z4zrWpJkIqJJDoTOXg6MWjZg&oe=67B3F294)
+Course Recommendation
+![Course Recommendation](https://github.com/user-attachments/assets/2887024e-e3a3-4093-a749-7b61d7dca336)
 ----------
 
 ### 6. Team Members
