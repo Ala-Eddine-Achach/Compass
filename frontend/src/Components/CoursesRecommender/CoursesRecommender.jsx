@@ -18,7 +18,7 @@ const CoursesRecommender = ({isOpen, setIsOpen}) => {
         //console.log('Course: ', course)
         const data = {course: course, recNum: numRec}
         try {
-            const res = await axios.post('http://localhost:5000/recommend', data);
+            const res = await axios.post('http://127.0.0.1:5001/recommend', data);
             setCourses(Object.values(res.data).map(course => course));
             //console.log('Response:', res.data);
             //console.log('Courses:', courses);
