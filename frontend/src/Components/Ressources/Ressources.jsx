@@ -15,7 +15,7 @@ import PopUp from "../Common/PopUp/PopUp.jsx";
 
 function Ressources({ role, sessionId }) {
     const [files, setFiles] = useState([]);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     const [uploading, setUploading] = useState(false); // State to track file upload status
     const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
     const [fileToDelete, setFileToDelete] = useState(null); // State to store file to be deleted

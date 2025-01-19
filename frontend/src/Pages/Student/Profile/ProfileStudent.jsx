@@ -25,7 +25,7 @@ export default function ProfileStudent() {
     const {currentUser,user} = useContext(CurrentUser);
     useEffect(() => {
         if(currentUser?.role === "Student"){
-            const userToken = Cookie().get('academiqa');
+            const userToken = Cookie().get('compass');
             axios
                 .get(`${baseURL}/${PRESENCE}/${STUDENTSABSENCE}/${currentUser?.id}`,{
                     headers: {

@@ -44,7 +44,7 @@ const AbsenceChart = () => {
     };
 
     const [absenceSector, setAbsenceSector] = useState([]);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
 
     useEffect(() => {
         axios

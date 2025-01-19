@@ -18,7 +18,7 @@ const AddNote = ({ isOpen, setIsOpen, session }) => {
     setNewNote({ ...newNote, [event.target.name]: event.target.value });
   };
 
-  const userToken = Cookie().get("academiqa");
+  const userToken = Cookie().get("compass");
   const handleSubmit = (event) => {
     event.preventDefault();
     const noteWithSession = { ...newNote, session: session };

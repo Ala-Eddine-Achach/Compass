@@ -13,7 +13,7 @@ import {ToastContext} from "../../Context/ToastContext.jsx";
 
 const PresenceSheet = ({sessionId, session}) => {
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     useEffect(() => {
          axios.get(`http://localhost:5000/session/presentStudents/${sessionId}`,{
              headers: {

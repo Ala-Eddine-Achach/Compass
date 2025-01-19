@@ -35,7 +35,7 @@ const CourseForTeacher = ({course,color}) => {
         setDisplay(false);
         try{
             const cookie = Cookie();
-            const userToken = cookie.get('academiqa')
+            const userToken = cookie.get('compass')
             const res = await axios.get(`http://localhost:5000/student/all/${course?.sectorLevel}`,{
                 headers: {
                     Authorization: `Bearer ${userToken}`,

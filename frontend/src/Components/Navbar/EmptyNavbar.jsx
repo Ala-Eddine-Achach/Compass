@@ -7,7 +7,7 @@ const EmptyNavbar = ({ children, width }) => {
   const {toggleVisibility,notifCount} = useNotification();
   const navigate = useNavigate();
   const logout = () => {
-    Cookie().remove("academiqa");
+    Cookie().remove("compass");
     navigate('/login');
   };
   return (

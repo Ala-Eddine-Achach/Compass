@@ -16,7 +16,7 @@ function SessionsAnnouncement({ role , course}) {
     const [announcementsForTeacher, setAnnouncementsForTeacher] = useState([]);
     const { id } = useParams();
     const { currentUser, user } = useContext(CurrentUser);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
 
     // Fetch announcements for students from the server
     useEffect(() => {

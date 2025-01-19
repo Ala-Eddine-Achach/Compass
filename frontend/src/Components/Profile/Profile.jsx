@@ -55,7 +55,7 @@ const Profile = () => {
     reader.readAsDataURL(selectedFile);
   };
 
-  const userToken = Cookie().get("academiqa");
+  const userToken = Cookie().get("compass");
   const config = {
     headers: {
       "Content-Type": "multipart/form-data",

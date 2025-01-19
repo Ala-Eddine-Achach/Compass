@@ -16,7 +16,7 @@ export default function StudentCalendar() {
     const user = userContext.user;
     const [sessionsData, setSessionsData] = useState("");
     const cookie = Cookie();
-    const token = cookie.get('academiqa');
+    const token = cookie.get('compass');
   
     //get the sessions by user groupID
     useEffect(() => {

@@ -19,7 +19,7 @@ import StudentsList from "../../../Components/StudentsList/StudentsList.jsx";
 export default function HomeTeacher() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { currentUser, user } = useContext(CurrentUser);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);

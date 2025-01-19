@@ -16,7 +16,7 @@ const StudentsAdmin = () => {
         getGroups();
     }, []);
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     const handleGroupFileCLick = () => {
         document.getElementById('csv-upload-group').click();
     }

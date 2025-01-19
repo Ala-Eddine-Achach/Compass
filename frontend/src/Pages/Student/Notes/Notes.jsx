@@ -45,7 +45,7 @@ export default function Notes() {
   ];
 
   useEffect(() => {
-    const userToken = Cookie().get("academiqa");
+    const userToken = Cookie().get("compass");
     const param = user?.group?.sectorLevel;
     //console.log("param: ", param);
     axios

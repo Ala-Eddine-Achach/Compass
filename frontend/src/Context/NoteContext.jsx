@@ -12,7 +12,7 @@ const NoteProvider = ({ children, sessionId }) => {
 
   useEffect(() => {
     if (currentUser?.role === "Student") {
-      const userToken = Cookie().get("academiqa");
+      const userToken = Cookie().get("compass");
       if (sessionId) {
         axios
           .get(`${baseURL}/${NOTE}/${sessionId}`, {

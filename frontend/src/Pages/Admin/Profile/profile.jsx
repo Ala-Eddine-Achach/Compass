@@ -23,7 +23,7 @@ MdAutoGra.propTypes = {
     className: PropTypes.string
 };
 const Profile = () => {
-    const userToken = Cookie().get("academiqa");
+    const userToken = Cookie().get("compass");
     const {id} = useParams();
     const {role} = useParams();
     const [user, setUser] = useState({});

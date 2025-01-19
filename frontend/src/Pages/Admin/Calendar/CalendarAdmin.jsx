@@ -25,7 +25,7 @@ export default function Calendar() {
     const role = userContext.currentUser? userContext.currentUser.role: "student";
     
     const cookie = Cookie();
-    const token = cookie.get('academiqa');
+    const token = cookie.get('compass');
 
     const [sessionsData, setSessionsData] = useState("");
     const [reload, setReload] = useState(false);

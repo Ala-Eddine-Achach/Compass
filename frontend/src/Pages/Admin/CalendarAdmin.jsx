@@ -21,7 +21,7 @@
 //     const userContext = useContext(CurrentUser);
 //     const [reload, setReload] = useState(false);
 //     const cookie = Cookie();
-//     const token = cookie.get('academiqa');
+//     const token = cookie.get('compass');
 //     const role = jwtDecode(token).role;
 //     const [sessionsData, setSessionsData] = useState("");
     

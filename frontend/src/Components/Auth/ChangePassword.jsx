@@ -21,7 +21,7 @@ const ChangePassword = ({isOpen, setIsOpen}) => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [courses, setCourses] = useState([])
     const [numRec, setNumRec] = useState(0);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     const {showToast} = useContext(ToastContext);
     const handleSubmit = async (e) => {
         e.preventDefault();

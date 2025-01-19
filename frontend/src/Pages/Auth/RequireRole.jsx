@@ -10,7 +10,7 @@ export default function RequireRole({ allowedRole }) {
     const navigate = useNavigate();
     const userContext = useContext(CurrentUser);
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa');
+    const userToken = cookie.get('compass');
     const role = jwtDecode(userToken).role;
 
     // console.log("userContext: ", userContext);

@@ -17,7 +17,7 @@ const Task = ({ role, session }) => {
   const [showNewTask, setShowNewTask] = useState(false);
   const newTaskRef = useRef(null);
   const { currentUser } = useContext(CurrentUser);
-  const userToken = Cookie().get("academiqa");
+  const userToken = Cookie().get("compass");
 
   //get all tasks
   useEffect(() => {
@@ -53,7 +53,7 @@ const Task = ({ role, session }) => {
             },
             {
               headers: {
-                Authorization: `Bearer ${Cookie().get("academiqa")}`,
+                Authorization: `Bearer ${Cookie().get("compass")}`,
               },
             }
           )
@@ -83,7 +83,7 @@ const Task = ({ role, session }) => {
             },
             {
               headers: {
-                Authorization: `Bearer ${Cookie().get("academiqa")}`,
+                Authorization: `Bearer ${Cookie().get("compass")}`,
               },
             }
           )
@@ -118,7 +118,7 @@ const Task = ({ role, session }) => {
       axios
         .delete(`${baseURL}/${TASK}/${task.id}`, {
           headers: {
-            Authorization: `Bearer ${Cookie().get("academiqa")}`,
+            Authorization: `Bearer ${Cookie().get("compass")}`,
           },
         })
         .then((response) => {

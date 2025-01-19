@@ -8,7 +8,7 @@ import Cookie from "cookie-universal";
 function AnnouncementInput({course,user, setAnnouncementsForTeacher}) {
     const inputRef = useRef(null);
     const [newAnnouncement, setNewAnnouncement] = useState("");
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
 
     const handleInputChange = (event) => {
         setNewAnnouncement(event.target.value);

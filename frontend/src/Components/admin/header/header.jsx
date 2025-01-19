@@ -16,7 +16,7 @@ const Header = () => {
     const [nbClasses, setNbClasses] = useState(0);
     const [avgAbsence, setAvgAbsence] = useState(0);
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     useEffect(() => {
         axios
           .get(`${baseURL}/${TEACHER}/count`, {

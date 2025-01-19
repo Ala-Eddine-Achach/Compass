@@ -13,7 +13,7 @@ import CurrentUserContext from "./Context/CurrentUserContext.jsx";
 import {ToastProvider} from "./Context/ToastContext.jsx";
 
 registerLicense(
-"Ngo9BigBOggjHTQxAR8/V1NMaF5cXmBCfEx3Q3xbf1x1ZFdMZVRbR3JPIiBoS35Rc0ViWHhfdXRTR2BbVEB0"
+"ORg4AjUWIQA/Gnt2XVhhQlJHfV1dXGVWfFN0QHNbdVt4flZCcDwsT3RfQFhjSH9bd0xiXn5ceXRSTw=="
 );
 
 const root = ReactDOM.createRoot(

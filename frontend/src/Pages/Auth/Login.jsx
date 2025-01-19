@@ -66,7 +66,7 @@ export default function Login() {
                     console.log(res.data);
                     const token = res.data.accessToken;
                     // cookie
-                    cookie.set('academiqa', token, {
+                    cookie.set('compass', token, {
                         path: '/',
                         // httpOnly: true
 
@@ -83,7 +83,7 @@ export default function Login() {
 
 
                     const path = user.role === "Admin" ? '/admin/home' : user.role === "Teacher" ? '/teacher/home' : user.role === "Student" ? '/student/home' : '/';
-                    userContext.setLoading(true);
+                    userContext.setLoading(false);
                     console.log("Path:", path);
                     // window.location.pathname = path;
                     navigate(path);

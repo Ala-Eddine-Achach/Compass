@@ -21,7 +21,7 @@ const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const nav = useNavigate();
   const cookie = Cookie();
-  const token = cookie.get('academiqa');
+  const token = cookie.get('compass');
 
 
   // get sessions for small calendar 

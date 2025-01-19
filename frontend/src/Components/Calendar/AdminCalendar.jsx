@@ -36,7 +36,7 @@ import {CurrentUser} from "../../Context/CurrentUserContext.jsx";
       return instance.formatDate(value, { skeleton: "hm" });
     };
     const cookie = Cookie();
-    const token = cookie.get('academiqa');
+    const token = cookie.get('compass');
 
     L10n.load({
       'en-US': {

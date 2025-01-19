@@ -22,7 +22,7 @@ import Scrollbar from "../../Common/Scrollbar/Scrollbar.jsx";
 import Cookie from "cookie-universal";
 
 const AdminsTable = () => {
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     const [admins, setAdmins] = useState([]);
     const [formData, setFormData] = useState({
         username: "",

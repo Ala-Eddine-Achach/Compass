@@ -15,7 +15,7 @@ const NotificationCard = () => {
     const notificationCardRef = useRef(null);
     const socket = useSocket();
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     const config = {
         headers: {
             Authorization: `Bearer ${userToken}`,

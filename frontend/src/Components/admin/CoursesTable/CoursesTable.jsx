@@ -25,7 +25,7 @@ import { SUBJECT, baseURL } from "../../../Api/Api";
 const TableCourses = () => {
     const [courses, setCourses] = useState([])
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     const [isHovered, setIsHovered] = useState(false);
     const [file, setFile] = useState(null);
     const [formData, setFormData] = useState({

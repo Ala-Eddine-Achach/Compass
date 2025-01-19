@@ -17,7 +17,7 @@ export default function SessionTeacher() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [session, setSession] = useState();
     const {id} = useParams();
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     useEffect(() => {
         axios
             .get(`http://localhost:5000/session/${id}`, {

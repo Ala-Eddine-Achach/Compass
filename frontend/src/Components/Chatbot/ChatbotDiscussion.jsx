@@ -40,7 +40,7 @@ const ChatbotDiscussion = ({ discussion, getDiscussions }) => {
   };
 
   const cookie = Cookie();
-  const userToken = cookie.get("academiqa");
+  const userToken = cookie.get("compass");
   const config = {
     headers: {
       "Content-Type": "multipart/form-data", // Set the content type for the FormData

@@ -12,7 +12,7 @@ const MidNavbar = ({ children,role }) => {
   const navigate = useNavigate();
   const {currentUser,user} = useContext(CurrentUser);
   const logout = () => {
-    Cookie().remove("academiqa");
+    Cookie().remove("compass");
     navigate('/login');
   };
 

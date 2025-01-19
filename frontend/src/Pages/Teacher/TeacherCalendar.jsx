@@ -16,7 +16,7 @@ export default function TeacherCalendar() {
     const [sessionsData, setSessionsData] = useState([]);
     const {currentUser,user} = useContext(CurrentUser);
     const cookie = Cookie();
-    const token = cookie.get('academiqa');
+    const token = cookie.get('compass');
     // get groups of teacher
     useEffect(() => {
         try {

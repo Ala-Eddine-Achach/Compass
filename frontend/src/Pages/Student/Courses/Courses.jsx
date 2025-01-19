@@ -40,7 +40,7 @@ export default function Courses() {
 
     useEffect(() => {
         if(currentUser?.role === "Student"){
-            const userToken = Cookie().get('academiqa');
+            const userToken = Cookie().get('compass');
             axios
                 .get(`${baseURL}/${SUBJECT}/${SECTORLEVEL}/${user?.group?.sectorLevel}`,{
                     headers: {

@@ -10,7 +10,7 @@ export default function RequireLogin() {
     const location = useLocation();
 
     // Check if the user is authenticated
-    const isAuthenticated = cookie.get('academiqa');
+    const isAuthenticated = cookie.get('compass');
 
     // Decode user role if authenticated
     let userRole;

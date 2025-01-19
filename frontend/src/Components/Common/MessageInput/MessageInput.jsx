@@ -73,7 +73,7 @@ const MessageInput = (
                 <div className="d-flex justify-content-between mt-1">
                                 <textarea
                                     rows="1"
-                                    placeholder={`${fromChatBot? 'Ask AcademIQa Bot ...' : 'Type a message ...'}`}
+                                    placeholder={`${fromChatBot? 'Ask compass Bot ...' : 'Type a message ...'}`}
                                     value={prompt}
                                     onChange={handlePromptChange}
                                     onKeyDown={(e) => {

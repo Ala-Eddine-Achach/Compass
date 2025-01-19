@@ -24,7 +24,7 @@ export default function ProfileTeacher() {
     const {currentUser,user} = useContext(CurrentUser);
     useEffect(() => {
         if(currentUser?.role === "Teacher"){
-            const userToken = Cookie().get('academiqa');
+            const userToken = Cookie().get('compass');
             axios
                 .get(`http://localhost:5000/subject/teacher`,{
                     headers: {

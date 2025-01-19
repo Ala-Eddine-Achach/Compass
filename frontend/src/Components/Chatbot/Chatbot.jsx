@@ -16,7 +16,7 @@ const Chatbot = ({isOpen, setIsOpen}) => {
     const getDiscussions = async () => {
         try{
             const cookie = Cookie();
-            const userToken = cookie.get('academiqa')
+            const userToken = cookie.get('compass')
             const res = await axios.get('http://localhost:5000/chatbot',{
                 headers: {
                     Authorization: `Bearer ${userToken}`,
@@ -49,7 +49,7 @@ const Chatbot = ({isOpen, setIsOpen}) => {
                     <div
                         className={`Welcome row mb-4 p-0 d-flex justify-content-center align-items-center rounded-5`}>
                         <div className="title row p-0 col-10 d-flex flex-column justify-content-end align-items-center">
-                            <h1 className={`p-0 pe-2 fw-bold text-center`}> Welcome to AcademIQa Bot </h1>
+                            <h1 className={`p-0 pe-2 fw-bold text-center`}> Welcome to compass Bot </h1>
                             {!isMediumScreen ? (<span
                                 className="d-flex flex-column mt-1 justify-content-end align-items-end fw-semibold"> Gemini-Pro</span>) : null}
                         </div>

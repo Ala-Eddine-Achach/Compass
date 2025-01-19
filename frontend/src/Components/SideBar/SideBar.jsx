@@ -7,7 +7,7 @@ import { WindowSize } from '../../Context/WindowContext'
 import { links } from './NavLink'
 import './bars.css'
 import BotIcon from '../../assets/SideBar/BotIcon.png'
-import BigLogo from '../../assets/SideBar/academIQa.png'
+import BigLogo from '../../assets/SideBar/compass.png'
 import SmallLogo from '../../assets/SideBar/SmallLogo.png'
 import Chatbot from '../../assets/SideBar/Chatbot.png'
 import CoursesRecommender from "../CoursesRecommender/CoursesRecommender.jsx";

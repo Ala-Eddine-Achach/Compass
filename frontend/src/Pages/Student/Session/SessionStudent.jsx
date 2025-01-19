@@ -26,7 +26,7 @@ export default function SessionStudent() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [session, setSession] = useState();
   const { id } = useParams();
-  const userToken = Cookie().get("academiqa");
+  const userToken = Cookie().get("compass");
   useEffect(() => {
     axios
       .get(`${baseURL}/${SESSION}/${id}`, {

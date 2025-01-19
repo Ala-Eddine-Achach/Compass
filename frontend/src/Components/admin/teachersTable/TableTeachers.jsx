@@ -26,7 +26,7 @@ import Cookie from "cookie-universal";
 
 const TableTeachers = () => {
     const [teachers, setTeachers] = useState([]);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     const [isHovered, setIsHovered] = useState(false);
     const [file, setFile] = useState(null);
     const [formData, setFormData] = useState({

@@ -19,7 +19,7 @@ export default function CurrentUserContext({ children }) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     const cookie = Cookie();
-    const userToken = cookie.get("academiqa");
+    const userToken = cookie.get("compass");
     if (userToken) {
       setCurrentUser({
         id: jwtDecode(userToken).id,
@@ -33,7 +33,7 @@ export default function CurrentUserContext({ children }) {
     useEffect(() => {
         if(currentUser){
             const userPath = currentUser.role === "Student" ? 'student' : currentUser.role === "Admin" ? 'admin' : 'teacher';
-            const userToken = Cookie().get('academiqa');
+            const userToken = Cookie().get('compass');
 
       axios
         .get(`${baseURL}/${userPath}/${currentUser?.id}`, {

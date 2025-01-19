@@ -27,7 +27,7 @@ import ToastContext from "react-bootstrap/ToastContext";
 
 // eslint-disable-next-line react/prop-types
 const TableStudents = ({groups}) => {
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     const [Options, setOptions] = useState([]);
     useEffect(() => {
         setOptions(groups.map(group => ({

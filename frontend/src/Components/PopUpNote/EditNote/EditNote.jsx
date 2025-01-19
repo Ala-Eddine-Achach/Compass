@@ -22,7 +22,7 @@ const EditNote = ({ note, isOpen, setIsOpen }) => {
   };
 
   const cookie = Cookie();
-  const userToken = cookie.get("academiqa");
+  const userToken = cookie.get("compass");
   const config = {
     headers: {
       Authorization: `Bearer ${userToken}`,

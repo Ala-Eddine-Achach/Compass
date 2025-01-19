@@ -15,7 +15,7 @@ import {baseURL, PRESENCE, STUDENTSABSENCE} from "../../../Api/Api.jsx";
 const TableAbsence = ({id}) => {
     const [courses, setCourses] = useState([]);
     const cookie = Cookie();
-    const userToken = cookie.get('academiqa')
+    const userToken = cookie.get('compass')
     const config = {
         headers: {
             Authorization: `Bearer ${userToken}`,

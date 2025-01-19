@@ -16,7 +16,7 @@ const Course = () => {
     const [course, setCourse] = useState();
     const [sessions, setSessions] = useState([]); // You can use this state to store the sessions of the course
     const {currentUser, user} = useContext(CurrentUser);
-    const userToken = Cookie().get('academiqa');
+    const userToken = Cookie().get('compass');
     useEffect(() => {
         //console.log("Sessionssssssssssssss: ", course?.sessionTypes);
         if (course?.sessionTypes) {
