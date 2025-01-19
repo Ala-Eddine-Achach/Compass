@@ -70,6 +70,20 @@ export class StudentService {
     });
   }
 
+  async getLeaderboard(): Promise<any[]> {
+    //select all students
+    var allstds = await this.studentRepository.find();
+    console.log(allstds);
+
+    return allstds.map((student) => ({
+      id: student.id,
+      username: student.username,
+      //randomly assign points betwenn 50 and 100
+
+      totalPoints: Math.floor(Math.random() * 50) + 50,
+    })).sort((a, b) => b.totalPoints - a.totalPoints);
+  }
+
   async getStudentsByTeacherId(teacherId: number) {
     // Get unique groups associated with the teacher
     const uniqueGroups =

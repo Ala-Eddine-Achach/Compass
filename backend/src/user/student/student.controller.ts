@@ -39,11 +39,7 @@ export class StudentController {
     return await this.studentService.countStudents();
   }
 
-  @Get(':id')
-  @UseGuards(JwtAuthGuard)
-  async findOneStudent(@Param('id', ParseIntPipe) id: number) {
-    return await this.studentService.findOneStudent(id);
-  }
+
 
   @Patch(':id')
   // @UseGuards(JwtAuthGuard)
@@ -58,5 +54,15 @@ export class StudentController {
   @UseGuards(JwtAuthGuard)
   async findAllStudentsByTeacher(@CurrentUser() teacher: Teacher) {
     return await this.studentService.getStudentsByTeacherId(teacher.id);
+  }
+  @Get('leaderboard')
+  async getLeaderboard() {
+    console.log('leaderboard');
+    return await this.studentService.getLeaderboard();
+  }
+  @Get(':id')
+  @UseGuards(JwtAuthGuard)
+  async findOneStudent(@Param('id', ParseIntPipe) id: number) {
+    return await this.studentService.findOneStudent(id);
   }
 }

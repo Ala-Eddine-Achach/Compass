@@ -14,6 +14,9 @@ export class Student extends User {
   group: GroupEntity;
   @Column()
   enrollmentNumber: number;
+
+
+
   @OneToMany(() => PresenceEntity, (presence) => presence.student, {
     nullable: true,
   })
