@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cookie from "cookie-universal";
 import "./FantasyGame.css";
-//import url base
 import { baseURL } from "../../Api/Api";
 
 // Add Axios interceptors for logging requests and responses
@@ -33,9 +32,11 @@ export default function FantasyGame() {
     const [selectedSubjects, setSelectedSubjects] = useState([]); // Selected lineup
     const maxSubjects = 5; // Max lineup size
 
-    // Fetch available subjects on component mount
+    // Fetch available subjects and lineup on component mount
     useEffect(() => {
         const userToken = Cookie().get("compass"); // Get token from cookies
+
+        // Fetch available subjects
         axios
             .get(`${baseURL}/fantasy/subjects`, {
                 headers: {
@@ -56,6 +57,25 @@ export default function FantasyGame() {
                 }
             })
             .catch((err) => console.error("Error fetching subjects:", err));
+
+        // Fetch selected lineup
+        axios
+            .get(`${baseURL}/fantasy`, {
+                headers: {
+                    Authorization: `Bearer ${userToken}`,
+                },
+            })
+            .then((res) => {
+                console.log("Fetched Lineup Data:", res.data); // Debugging
+                if (Array.isArray(res.data)) {
+                    // Filter out empty subjects (if needed)
+                    const filteredLineup = res.data.filter(subject => subject.id !== -1);
+                    setSelectedSubjects(filteredLineup);
+                } else {
+                    console.error("Invalid lineup format: Expected an array");
+                }
+            })
+            .catch((err) => console.error("Error fetching lineup:", err));
     }, []);
 
     // Handle subject selection
@@ -88,10 +108,10 @@ export default function FantasyGame() {
         axios
             .post(`${baseURL}/fantasy`,
                 lineupData, {
-                headers: {
-                    Authorization: `Bearer ${userToken}`,
-                },
-            })
+                    headers: {
+                        Authorization: `Bearer ${userToken}`,
+                    },
+                })
             .then((res) => {
                 alert("Fantasy lineup saved successfully!");
                 console.log("Response:", res.data);
